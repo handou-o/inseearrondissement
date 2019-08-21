@@ -38,7 +38,7 @@ export class ArrondissementService {
         if (response.json.results.length > 1) { 
           return reject(new BadRequestException('Please use a more detailled address'));
         }
-        resolve(response.json.results[0].geometry.location);
+        return resolve(response.json.results[0].geometry.location);
       });
     })
   }
@@ -61,7 +61,7 @@ export class ArrondissementService {
           return resolve(obj.records[0].fields)
         } catch (e){
           console.error(e);
-          reject (new NotFoundException('Sorry we did not found any result, please try again with another address'))
+          return reject (new NotFoundException('Sorry we did not found any result, please try again with another address'))
         }
       })
     })

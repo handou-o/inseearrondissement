@@ -4,8 +4,7 @@
 
 ## Description
 
-[Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
-
+NodeJs api (nest) to get french business unit from address using google geocode and opendatasoft api
 
 ## Installation
 

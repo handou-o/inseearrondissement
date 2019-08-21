@@ -6,6 +6,8 @@
 
 NodeJs api (nest) to get french business unit from address using google geocode and opendatasoft api
 
+You can try it at : https://yylosiqk5d.execute-api.eu-west-3.amazonaws.com/Stage/arrondissement
+
 ## Installation
 
 You will need a google api key with geocoding api enabled 
